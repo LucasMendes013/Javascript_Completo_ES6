@@ -98,8 +98,7 @@ console.log(somaNotANumber2)
   var number = '80' / 2
   var unidade = 'kg'
   var peso = number + unidade     //80kg
-
-console.log(pesoPorDois)
+console.log(peso)
 
 
 

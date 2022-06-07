@@ -1,7 +1,7 @@
 // Existem 7 tipos de dados
 // Todos são primitivos(imutáveis), exceto os objetos.
 
-  var nome = 'Lucas'          //String
+  var nome = 'Lucas'          //String ------------------------------------
   var idade = 20              //Number
   var possuiFaculdade = true  //Boolean
   var time                    //Undefined
