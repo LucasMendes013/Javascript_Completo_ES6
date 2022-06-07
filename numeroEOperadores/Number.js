@@ -2,7 +2,7 @@
 // Todos são primitivos(imutáveis), exceto os objetos.
 
   var nome = 'Lucas'          //String
-  var idade = 20              //Number
+  var idade = 20              //Number --------------------------------------
   var possuiFaculdade = true  //Boolean
   var time                    //Undefined
   var comida = null           //Null
@@ -82,7 +82,24 @@ console.log(+minhaIdade1 + somaIdade)  //25
 
 
 
+//EXERCICIO:
 
+// Criar duas expressções que retornam NaN
+  var NotANumber = 'string'
+  var somaNotANumber = NotANumber / idade
+console.log(somaNotANumber)
+
+  var NotANumber2 = 'string2'
+  var somaNotANumber2 = NotANumber2 * idade
+console.log(somaNotANumber2)
+
+
+//Como dividir o peso por 2?
+  var number = '80' / 2
+  var unidade = 'kg'
+  var peso = number + unidade     //80kg
+
+console.log(pesoPorDois)
 
 
 
