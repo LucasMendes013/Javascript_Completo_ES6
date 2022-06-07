@@ -107,12 +107,12 @@ if(!!'')        //false
 //O == faz uma comparação não tão estrita e o === faz uma comparação estrita, ou seja, o tipo de dados deve ser o mesmo quando usamos ===
 
 10 == '10'    //true     //Pois 10 é igual a dez (levando em consideraçao )
-10 == 10      //
-10 === '10'   //
-10 === 10     //
-10 != 15      //
-10 != '10'    //
-10 !== '10'   //
+10 == 10      //true     //Pois 10 é igual a dez e igual nos numbers
+10 === '10'   //false    //Pois 10 é igual a dez, mas diferente de number para string
+10 === 10     //true     //Pois 10 é igual a dez e igual nos numbers
+10 != 15      //true     //Pois 10 é diferente de 15(não compara os tipos de dados)
+10 != '10'    //false    //Pois 10 é é igual a 10 mas diferente nos tipos de dados
+10 !== '10'   //true     //Pois 10 é estritamente diferente nos tipos de dados(mas igual nos numero 10 e 10)
 
 
 
