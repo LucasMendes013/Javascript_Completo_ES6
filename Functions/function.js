@@ -152,3 +152,24 @@ function imc(peso, altura) {
   console.log(imc)
 }
 
+//EXERCÍCIOS
+//Crie uma função para verificar se um valor é Truthy
+function verificandoTruthy (truthy) {
+  if (truthy == 0){
+        console.log('Falsy, 0')
+    } else if (truthy === undefined){
+        console.log('Falsy, undefined')
+    } else if (truthy === null){
+        console.log('Falsy, null')
+    } else if (truthy === ''){
+        console.log('Falsy, vazio')
+    } else if (truthy === false){
+        console.log('Falsy, falso')
+    } else if (truthy === NaN){
+        console.log('Falsy')
+    } else {
+        console.log('A informação é verdadeira, Truthy!!')
+    }
+}
+verificandoTruthy()
+
