@@ -115,7 +115,105 @@ if(!!'')        //false
 10 !== '10'   //true     //Pois 10 é estritamente diferente nos tipos de dados(mas igual nos numero 10 e 10)
 
 
+//Operadores Lógicos: &&
+//O operador lógico & sempre retorna falso caso na comparação haja algum falso, caso não tenha, retornará o ultimo valor true:
+true && true        //true
+true && false       //false
+false && true       //false
+'Gato' && 'Cão'     //'Cão'
+(5 - 5) && (5 + 5)  //0       //Retorna 0 pois 0 é false como citado acima
+'Gato' && false     //false   //Retorna false pois 'gato' é uma string, e strings por não serem vazio('') retornam false
+(5 >= 5) && (3 < 6) //true
+
+//Exemplos: Retorna true
+if((10 - 5) && (20 - 5)) {
+  console.log('O valor é verdadeiro')
+} else {
+  console.log('O valor é falso')
+}
+
+//Operador lógico || ou:
+//Retorna o primeiro valor true que encontrar
+true || true          //true
+true || false         //true
+false || true         //true  
+'Gato' || 'Cão'       //'Gato'
+(5 - 5) || (5 + 5)    //10
+'Gato' || false       //Gato
+(5 >= 5) || (3 < 6)   //true
 
 
+
+//SWITH
+//Com o switch, você pode verificar se uma variável é igual à diferentes valores usando case. Caso ela seja igual, você pode fazer alguma coisa e utilizar a palavra chave break; para cancelar a continuação. O valor de default ocorrerá caso nenhuma das anteriores seja verdadeira
+
+var corFavorita = 'azul'
+
+switch(corFavorita){
+  case 'azul':
+    console.log('A cor é azul')
+    break;
+  case 'vermelho':
+    console.log('A cor é vermelho')
+    break;
+  case 'amarelo':
+    console.log('A cor é amarelo')
+    break;
+  case 'branco':
+    console.log('A cor é branco')
+    break;
+  case 'preto' :
+    console.log('A cor é preto')
+    break;  
+  default: 
+    console.log('Nenhuma cor')
+}
+
+//EXERCICIOS
+//Verifique se a sua idade é maior do que a de algum parente
+//Dependendo do resultado coloque no console 'É maior', 'é igual' ou 'é menor
+var idadeMinhaExemplo = 20
+var idadeMaeExemplo = 30
+
+if(idadeMinhaExemplo > idadeMaeExemplo){
+  console.log('Idade maior que da minha mae')
+} else if ( idadeMinhaExemplo = idadeMaeExemplo) {
+  console.log('Idade igual a da minha mãe')
+} else {
+  console.log('Idade menor que da minha mae')
+}
+
+//Qual valor é retornado na seguinte expressão:
+var expressao = (5 - 2) && (5 - ' ') && (5 - 2)
+  console.log(expressao)
+
+//Verifique se as seguintes variáveis são Truth ou Falsy
+var nome = 'Lucas'
+var idade = 28
+var possuiFaculdade = false
+var empregoFuturo
+var dinheiroNaConta = 0
+//Lembrando que o !! faz uma verificação booleana
+  console.log(
+    !!nome,           //true
+    !!idade,          //true  
+    !!possuiFaculdade,//false
+    !!empregoFuturo,  //false
+    !!dinheiroNaConta //false
+    )
+
+//O que aparecerá no console? //Apareça 'Condicao Falsa'
+if(('Gato' === 'gato') && (5 > 2)){
+  console.log('Condição Verdadeira')
+} else {
+  console.log('Condição Falsa')
+}
+
+//O que aparecerá no console? //Apareça 'Condicao Verdadeira'
+if(('Gato' === 'gato') || (5 > 2)){
+  console.log('Gato' && 'Cão')      //Nesse caso, ambas são verdadeira, por serem strings com informações acima de 0, e como são ambas verdadeiras, a ultima verdadeira é a que aparece: 'Cão', é true
+} else {
+  console.log('Condição Falsa')
+}
 
 
