@@ -172,4 +172,54 @@ function verificandoTruthy (truthy) {
     }
 }
 verificandoTruthy()
+//Resolução do prof:
+function isTruthy(dado){
+  return !!dado
+}
+
+//Crie uma função matemática que retorne o perímetro de um quadrado
+// perímetro: soma dos 4 lados do quadrado
+function perimetroQuadrado(lado){
+  return lado * 4
+}
+perimetroQuadrado(2)
+
+//Crie uma função que retorne nome e sobrenome: (nome completo)
+function nomeCompleto(nome, sobrenome){
+  return `Meu nome é ${nome} ${sobrenome}`
+}
+console.log(nomeCompleto('lucas', 'mendes'))
+
+//Crie uma função que verifica se o número é par:
+function numeroPar(numero){
+  const modulo = numero % 2
+  if(modulo === 0){
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log(numeroPar(1))
+
+//O addeventlistener é uma funcao nativa do Javascript
+//O primeiro parâmetro é o evento que ocorre e o segundo é um callback
+//Utilize essa função para mostrar no console o seu nome completo
+//Quando o evento 'scroll' ocorrer
+
+addEventListener('scroll', function(){
+  console.log(`Meu nome é Lucas Mendes`) 
+})
+
+//Corrija o erro abaixo:
+var totalPaises = 193
+function precisoVisitar(paisesVisitados){
+  return `Ainda faltam ${totalPaises - paisesVisitados} para visitar `
+}
+function jaVisitei(paisesVisitados){
+  return `Já visitei ${paisesVisitados} do total de ${totalPaises} países`
+}
+precisoVisitar(20)
+jaVisitei(20)
+
 
