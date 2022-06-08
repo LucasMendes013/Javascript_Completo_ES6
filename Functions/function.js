@@ -1,0 +1,94 @@
+//FUNÇÕES
+//A função é um bloco de código que pode ser executado e reutilizado. Valores podem ser passados por uma função e a mesma retorna outro valor.
+
+function areaQuadrado(lado) {
+  return lado * lado
+}
+
+console.log(areaQuadrado(4))
+console.log(areaQuadrado(5))
+console.log(areaQuadrado(2))
+
+function pi(){
+  return 3.14
+}
+var total = 5 * pi()
+
+//caso coloquemos:
+console.log(pi())
+//o resultado é o que especificamos em return;
+
+//caso coloquemos:
+console.log(pi)
+//o resultado será toda a funcao, ela toda aparecera no console.log
+
+// PARÂMETROS E ARGUMENTOS
+//Ao criar uma função, você pode definir parâmetros.
+//Ao executar uma função, você pode definir argumentos
+
+//peso e altura são os parâmetros
+function imc(peso, altura){ // parametros
+  const imc = peso / (altura ** 2)
+  return imc
+}
+
+imc(80, 1.80)   //Argumentos
+imc(60, 1.70)   //Argumentos
+
+
+//Functions com if e else 
+//Se dentro da function colocarmos 'return', quando chama-la afora, coloque console.log(corEscolhida()); Se dentro da function ao inves de 'return', colocarmos 'console.log', afora não precisa colocar 'console.log'. Quando usamos um, não precisa usar o outro.
+function corEscolhida(cor){
+  if(cor === 'Azul'){
+    return('A cor é Azul')
+  } else if (cor === 'Branco') {
+    return('A cor é Branco')
+  } else if (cor === 'Amarelo') {
+    return('A cor é Amarelo')
+  } else {
+    return('Cor não cadastrada')
+  }
+}
+console.log(corEscolhida('Amarelo'))
+
+//OU
+
+function corEscolhida(cor){
+  if(cor === 'Azul'){
+    console.log('A cor é Azul')
+  } else if (cor === 'Branco') {
+    console.log('A cor é Branco')
+  } else if (cor === 'Amarelo') {
+    console.log('A cor é Amarelo')
+  } else {
+    console.log('Cor não cadastrada')
+  }
+}
+corEscolhida('Amarelo')
+
+
+//Argumentos podem ser funções
+//Chamadas de Callback, geralmente são funções que ocorrem após algum evento.
+//Essa função 'addEventListener' serve para incluir um evento, no caso colocamos o de click, sempre que a pagina for clicada, exibirá no console('clicou')
+addEventListener('click', function() {
+  console.log('Clicou')
+})
+//A função possui dois argumentos
+//Primeiro é a string 'click'
+//Segundo é uma função anônima
+//Funções anônimas são aquelas em que o nome da função não é definido, escritas como      'function(){}'              ou
+//        '() => {}' .
+
+//Escrever dessa forma:
+addEventListener('click', function(){
+  console.log('Oi')
+})
+
+//É o mesmo que escrever dessa forma: ; Mas nessa de baixo, ao invés da function ser anônima, colocamos ela fora do argumento do 'AddEventListener' e seu escopo passa a não ser mais anônimo, agora pode ser mencionado.
+function exemplo(){
+  console.log('Oi')
+}
+  addEventListener('click', exemplo)
+
+
+
