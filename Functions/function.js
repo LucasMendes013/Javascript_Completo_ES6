@@ -160,11 +160,11 @@ function verificandoTruthy (truthy) {
     } else if (truthy === undefined){
         console.log('Falsy, undefined')
     } else if (truthy === null){
-        console.log('Falsy, null')
-    } else if (truthy === ''){
-        console.log('Falsy, vazio')
-    } else if (truthy === false){
-        console.log('Falsy, falso')
+    //     console.log('Falsy, null')
+    // } else if (truthy === ''){
+    //     console.log('Falsy, vazio')
+    // } else if (truthy === false){
+    //     console.log('Falsy, falso')
     } else if (truthy === NaN){
         console.log('Falsy')
     } else {
