@@ -68,3 +68,54 @@ for(;frutasComidas <= frutas;) {
   console.log(frutasComidas)
   frutasComidas = frutasComidas + 2
 }
+
+//EXERCICIOS
+//Crie um array com os anos que o Brasil ganhou a copa
+var brasilGanhador = [1980, 1984, 1988, 1992, 1996, 2000, 2004, 2008, 2012, 2016, 2020, 2024]
+
+for(var zeroVitorias = 0; zeroVitorias < brasilGanhador.length; zeroVitorias++){
+  console.log(brasilGanhador[zeroVitorias])
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Crei um código que verifica se existe um pastor alemão
+var cachorrinhosDeRaca = [dalmata = {nome: 'billie', temraca: true},
+'Pastor Alemão', true,
+ 'Cachorro Caramelo',
+  false, 'Pincher', 
+  false, 'Poodle', true]
+
+for(var zeroCaes = 0; zeroCaes < cachorrinhosDeRaca.length; zeroCaes++){
+  if(cachorrinhosDeRaca[zeroCaes] == cachorrinhosDeRaca[1]){
+    console.log('Tem raça')
+  } else {
+    console.log('Não tem raça')
+  }
+}
